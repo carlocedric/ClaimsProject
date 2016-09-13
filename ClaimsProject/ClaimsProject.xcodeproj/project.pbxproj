@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		3F235FAF1D7FC261009E851C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F235FAE1D7FC261009E851C /* AppDelegate.swift */; };
-		3F235FB11D7FC261009E851C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F235FB01D7FC261009E851C /* ViewController.swift */; };
-		3F235FB41D7FC261009E851C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F235FB21D7FC261009E851C /* Main.storyboard */; };
 		3F235FB61D7FC261009E851C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F235FB51D7FC261009E851C /* Assets.xcassets */; };
 		3F235FB91D7FC261009E851C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F235FB71D7FC261009E851C /* LaunchScreen.storyboard */; };
+		3F235FC41D7FC4D2009E851C /* ClaimObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F235FC31D7FC4D2009E851C /* ClaimObject.swift */; };
+		3F235FC71D7FD7F0009E851C /* AddNewClaimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F235FC51D7FD7F0009E851C /* AddNewClaimVC.swift */; };
+		3F235FC81D7FD7F0009E851C /* AddNewClaimVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F235FC61D7FD7F0009E851C /* AddNewClaimVC.xib */; };
+		3F235FD01D7FFC78009E851C /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F235FCF1D7FFC78009E851C /* CustomUITextField.swift */; };
+		3F541BC01D827F2900E1BC17 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F541BBF1D827F2900E1BC17 /* OpenSans-Light.ttf */; };
+		3F541BC21D827F3100E1BC17 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F541BC11D827F3100E1BC17 /* OpenSans-Regular.ttf */; };
+		3F729E3B1D879E140050BE62 /* EmailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F729E3A1D879E140050BE62 /* EmailManager.swift */; };
+		3F729E421D87C6F80050BE62 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F729E401D87C6F80050BE62 /* HomeVC.swift */; };
+		3F729E431D87C6F80050BE62 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F729E411D87C6F80050BE62 /* HomeVC.xib */; };
+		3F7AC1F21D814A5C007855E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7AC1F11D814A5C007855E1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F235FAB1D7FC261009E851C /* ClaimsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClaimsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F235FAE1D7FC261009E851C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F235FB01D7FC261009E851C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F235FB31D7FC261009E851C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F235FB51D7FC261009E851C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F235FB81D7FC261009E851C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F235FBA1D7FC261009E851C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F235FC31D7FC4D2009E851C /* ClaimObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClaimObject.swift; path = Models/ClaimObject.swift; sourceTree = "<group>"; };
+		3F235FC51D7FD7F0009E851C /* AddNewClaimVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddNewClaimVC.swift; path = ViewControllers/AddNewClaimVC.swift; sourceTree = "<group>"; };
+		3F235FC61D7FD7F0009E851C /* AddNewClaimVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddNewClaimVC.xib; path = ViewControllers/AddNewClaimVC.xib; sourceTree = "<group>"; };
+		3F235FCF1D7FFC78009E851C /* CustomUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUITextField.swift; path = Custom/CustomUITextField.swift; sourceTree = "<group>"; };
+		3F541BBF1D827F2900E1BC17 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		3F541BC11D827F3100E1BC17 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		3F729E3A1D879E140050BE62 /* EmailManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailManager.swift; sourceTree = "<group>"; };
+		3F729E401D87C6F80050BE62 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ViewControllers/HomeVC.swift; sourceTree = "<group>"; };
+		3F729E411D87C6F80050BE62 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeVC.xib; path = ViewControllers/HomeVC.xib; sourceTree = "<group>"; };
+		3F7AC1F11D814A5C007855E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Resources/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,102 @@
 		3F235FAD1D7FC261009E851C /* ClaimsProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F729E3F1D87C3350050BE62 /* Helpers */,
+				3F7AC1F01D814A39007855E1 /* Resources */,
+				3F235FCE1D7FFC42009E851C /* Custom */,
+				3F235FCB1D7FF834009E851C /* Extensions */,
+				3F235FC21D7FC45D009E851C /* Views / ViewControllers */,
+				3F235FC01D7FC450009E851C /* Model */,
 				3F235FAE1D7FC261009E851C /* AppDelegate.swift */,
-				3F235FB01D7FC261009E851C /* ViewController.swift */,
-				3F235FB21D7FC261009E851C /* Main.storyboard */,
 				3F235FB51D7FC261009E851C /* Assets.xcassets */,
 				3F235FB71D7FC261009E851C /* LaunchScreen.storyboard */,
 				3F235FBA1D7FC261009E851C /* Info.plist */,
 			);
 			path = ClaimsProject;
+			sourceTree = "<group>";
+		};
+		3F235FC01D7FC450009E851C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F235FC31D7FC4D2009E851C /* ClaimObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F235FC21D7FC45D009E851C /* Views / ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F729E3E1D87C3220050BE62 /* Home */,
+				3F541BC61D82828400E1BC17 /* Claims */,
+			);
+			name = "Views / ViewControllers";
+			sourceTree = "<group>";
+		};
+		3F235FCB1D7FF834009E851C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		3F235FCE1D7FFC42009E851C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3F235FCF1D7FFC78009E851C /* CustomUITextField.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		3F541BBE1D827F1400E1BC17 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3F541BC11D827F3100E1BC17 /* OpenSans-Regular.ttf */,
+				3F541BBF1D827F2900E1BC17 /* OpenSans-Light.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		3F541BC31D8280DF00E1BC17 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3F541BC61D82828400E1BC17 /* Claims */ = {
+			isa = PBXGroup;
+			children = (
+				3F235FC51D7FD7F0009E851C /* AddNewClaimVC.swift */,
+				3F235FC61D7FD7F0009E851C /* AddNewClaimVC.xib */,
+			);
+			name = Claims;
+			sourceTree = "<group>";
+		};
+		3F729E3E1D87C3220050BE62 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3F729E401D87C6F80050BE62 /* HomeVC.swift */,
+				3F729E411D87C6F80050BE62 /* HomeVC.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		3F729E3F1D87C3350050BE62 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3F729E3A1D879E140050BE62 /* EmailManager.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		3F7AC1F01D814A39007855E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F541BC31D8280DF00E1BC17 /* Images */,
+				3F541BBE1D827F1400E1BC17 /* Fonts */,
+				3F7AC1F11D814A5C007855E1 /* Constants.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +226,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F541BC21D827F3100E1BC17 /* OpenSans-Regular.ttf in Resources */,
+				3F729E431D87C6F80050BE62 /* HomeVC.xib in Resources */,
+				3F235FC81D7FD7F0009E851C /* AddNewClaimVC.xib in Resources */,
 				3F235FB91D7FC261009E851C /* LaunchScreen.storyboard in Resources */,
+				3F541BC01D827F2900E1BC17 /* OpenSans-Light.ttf in Resources */,
 				3F235FB61D7FC261009E851C /* Assets.xcassets in Resources */,
-				3F235FB41D7FC261009E851C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +242,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F235FB11D7FC261009E851C /* ViewController.swift in Sources */,
+				3F7AC1F21D814A5C007855E1 /* Constants.swift in Sources */,
+				3F729E421D87C6F80050BE62 /* HomeVC.swift in Sources */,
+				3F235FC71D7FD7F0009E851C /* AddNewClaimVC.swift in Sources */,
 				3F235FAF1D7FC261009E851C /* AppDelegate.swift in Sources */,
+				3F235FD01D7FFC78009E851C /* CustomUITextField.swift in Sources */,
+				3F729E3B1D879E140050BE62 /* EmailManager.swift in Sources */,
+				3F235FC41D7FC4D2009E851C /* ClaimObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F235FB21D7FC261009E851C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F235FB31D7FC261009E851C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F235FB71D7FC261009E851C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +390,7 @@
 				3F235FBF1D7FC261009E851C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
