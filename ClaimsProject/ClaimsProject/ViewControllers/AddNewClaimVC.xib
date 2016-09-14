@@ -19,11 +19,14 @@
                 <outlet property="currencyTextField" destination="lJ6-kZ-V4x" id="gzg-Os-aF9"/>
                 <outlet property="documentDateTextField" destination="WQ3-z3-ZrO" id="L2n-Zq-a94"/>
                 <outlet property="itemTextField" destination="1K4-0o-Ize" id="Ylg-hZ-OGv"/>
+                <outlet property="mainView" destination="Ezh-xA-IC2" id="01j-gm-15I"/>
+                <outlet property="photosView" destination="YSh-6i-SaO" id="8oY-aq-i4h"/>
                 <outlet property="postingDateTextField" destination="m0a-6H-CZD" id="SbF-hU-E5R"/>
                 <outlet property="projectIDTextField" destination="wYv-JU-Rzg" id="p9u-oZ-Wz3"/>
                 <outlet property="rateTextField" destination="D5k-Ft-QCY" id="IOz-GB-jAr"/>
                 <outlet property="scrollView" destination="mlV-Dz-aJH" id="azM-pO-h1h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeightConstraint" destination="LKp-Bu-Xm9" id="wb6-yh-fiz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -35,7 +38,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-xA-IC2">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="875"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="858"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyy-9y-Y8d" userLabel="DocumentView">
                                     <rect key="frame" x="25" y="40" width="325" height="80"/>
@@ -45,6 +48,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQ3-z3-ZrO" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="325" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
@@ -56,7 +60,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="00e-Yp-KHt"/>
                                                 <constraint firstAttribute="bottom" secondItem="WQ3-z3-ZrO" secondAttribute="bottom" id="37B-3S-yWH"/>
@@ -102,12 +106,13 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0a-6H-CZD" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="325" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="m0a-6H-CZD" secondAttribute="bottom" id="DZt-eC-0dF"/>
                                                 <constraint firstAttribute="trailing" secondItem="m0a-6H-CZD" secondAttribute="trailing" id="SvY-hK-4Kb"/>
@@ -131,7 +136,7 @@
                                     <rect key="frame" x="25" y="205" width="325" height="75"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TYPE OF CLAIM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cms-wu-OaF">
-                                            <rect key="frame" x="0.0" y="6" width="92.5" height="14"/>
+                                            <rect key="frame" x="0.0" y="6" width="93" height="14"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -141,12 +146,13 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZj-7k-3fH" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="325" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="sZj-7k-3fH" secondAttribute="bottom" id="CmN-tI-Aic"/>
                                                 <constraint firstAttribute="trailing" secondItem="sZj-7k-3fH" secondAttribute="trailing" id="DdK-IO-TL8"/>
@@ -170,7 +176,7 @@
                                     <rect key="frame" x="25" y="285" width="325" height="75"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COST CENTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSf-kY-08z">
-                                            <rect key="frame" x="0.0" y="6" width="87.5" height="14"/>
+                                            <rect key="frame" x="0.0" y="6" width="88" height="14"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -180,12 +186,13 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cp-T6-5W0" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="325" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="9cp-T6-5W0" firstAttribute="leading" secondItem="N8L-WF-3cq" secondAttribute="leading" id="alv-L3-HG7"/>
                                                 <constraint firstItem="9cp-T6-5W0" firstAttribute="top" secondItem="N8L-WF-3cq" secondAttribute="top" id="duA-vG-qjp"/>
@@ -209,7 +216,7 @@
                                     <rect key="frame" x="25" y="365" width="324" height="75"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROJECT ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCH-22-nXn">
-                                            <rect key="frame" x="0.0" y="0.0" width="73.5" height="14"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="74" height="14"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -219,12 +226,13 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wYv-JU-Rzg" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="324" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="wYv-JU-Rzg" firstAttribute="leading" secondItem="NgK-zA-rr7" secondAttribute="leading" id="Bst-KU-kQk"/>
                                                 <constraint firstAttribute="height" constant="40" id="QGW-a6-cL2"/>
@@ -258,12 +266,13 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwY-vy-CoL" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="324" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="mwY-vy-CoL" firstAttribute="leading" secondItem="t6i-JG-oHl" secondAttribute="leading" id="51A-RI-E75"/>
                                                 <constraint firstAttribute="height" constant="40" id="IeY-64-Vg9"/>
@@ -286,17 +295,12 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSz-CK-oYV" userLabel="AmountView">
                                     <rect key="frame" x="25" y="525" width="324" height="75"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENCY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-yf-zYn">
-                                            <rect key="frame" x="0.0" y="0.0" width="69" height="14"/>
-                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
-                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQO-3W-hDu">
                                             <rect key="frame" x="0.0" y="21" width="105" height="40"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lJ6-kZ-V4x" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -307,7 +311,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="Dnw-mZ-yaY"/>
                                                 <constraint firstItem="lJ6-kZ-V4x" firstAttribute="top" secondItem="CQO-3W-hDu" secondAttribute="top" id="NSq-FT-Mgy"/>
@@ -322,6 +326,7 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-3f-VeW" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="176" height="40"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -332,7 +337,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="2fZ-G3-Cen"/>
                                                 <constraint firstItem="Ogh-3f-VeW" firstAttribute="leading" secondItem="FuB-jI-PyH" secondAttribute="leading" id="5NV-7U-RSQ"/>
@@ -343,6 +348,12 @@
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMOUNT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llH-hm-8eR">
                                             <rect key="frame" x="262" y="0.0" width="54" height="14"/>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENCY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-yf-zYn">
+                                            <rect key="frame" x="0.0" y="0.0" width="69" height="14"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -376,12 +387,13 @@
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D5k-Ft-QCY" customClass="CustomUITextField" customModule="ClaimsProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="324" height="47"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="D5k-Ft-QCY" firstAttribute="leading" secondItem="n3g-j0-X2E" secondAttribute="leading" id="1TH-Kk-zRD"/>
                                                 <constraint firstItem="D5k-Ft-QCY" firstAttribute="top" secondItem="n3g-j0-X2E" secondAttribute="top" id="Usq-NQ-XLW"/>
@@ -415,13 +427,13 @@
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1K4-0o-Ize">
                                                     <rect key="frame" x="0.0" y="0.0" width="324" height="80"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                 </textView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="1K4-0o-Ize" firstAttribute="leading" secondItem="eRV-eZ-eUH" secondAttribute="leading" id="B5c-Bf-1NT"/>
                                                 <constraint firstItem="1K4-0o-Ize" firstAttribute="top" secondItem="eRV-eZ-eUH" secondAttribute="top" id="NFt-iC-Zkn"/>
@@ -455,28 +467,66 @@
                                         <action selector="submitClaim" destination="-1" eventType="touchUpInside" id="Rec-UI-ZId"/>
                                     </connections>
                                 </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-6i-SaO" userLabel="PhotosView">
+                                    <rect key="frame" x="0.0" y="858" width="375" height="145"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCM-cH-tOd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="FEE-Og-dw2"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attachments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-mx-7zu">
+                                            <rect key="frame" x="10" y="10" width="93" height="21"/>
+                                            <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="kCM-cH-tOd" firstAttribute="top" secondItem="YSh-6i-SaO" secondAttribute="top" id="Vec-Nk-jBG"/>
+                                        <constraint firstItem="4bh-mx-7zu" firstAttribute="top" secondItem="YSh-6i-SaO" secondAttribute="top" constant="10" id="ct9-jf-aMu"/>
+                                        <constraint firstAttribute="height" constant="145" id="dGf-P5-U6F"/>
+                                        <constraint firstItem="kCM-cH-tOd" firstAttribute="leading" secondItem="YSh-6i-SaO" secondAttribute="leading" id="gad-qK-rjh"/>
+                                        <constraint firstItem="4bh-mx-7zu" firstAttribute="leading" secondItem="YSh-6i-SaO" secondAttribute="leading" constant="10" id="lZT-RD-Kpl"/>
+                                        <constraint firstItem="kCM-cH-tOd" firstAttribute="top" secondItem="4bh-mx-7zu" secondAttribute="bottom" id="uMs-a5-EwZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="kCM-cH-tOd" secondAttribute="trailing" id="zlv-Ve-53R"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="uMs-a5-EwZ"/>
+                                        </mask>
+                                    </variation>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="Ap9-Sf-38S" firstAttribute="top" secondItem="6uN-uX-EhF" secondAttribute="bottom" constant="10" id="1x2-0j-3Fh"/>
                                 <constraint firstItem="2AE-v2-0SJ" firstAttribute="top" secondItem="klL-Bc-VOj" secondAttribute="bottom" constant="5" id="3Bv-Fz-Bd3"/>
-                                <constraint firstAttribute="height" constant="940" id="4KW-4i-cFT"/>
                                 <constraint firstItem="6uN-uX-EhF" firstAttribute="top" secondItem="QQY-ks-CKS" secondAttribute="bottom" constant="5" id="9g4-dc-7i2"/>
+                                <constraint firstAttribute="trailing" secondItem="YSh-6i-SaO" secondAttribute="trailing" id="Aky-9F-DFL"/>
                                 <constraint firstItem="NDh-d4-Eja" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="Bgg-Gp-Xf5"/>
                                 <constraint firstItem="Vyg-MH-0lq" firstAttribute="top" secondItem="2AE-v2-0SJ" secondAttribute="bottom" constant="5" id="Ceh-9e-pce"/>
                                 <constraint firstItem="QQY-ks-CKS" firstAttribute="top" secondItem="gSz-CK-oYV" secondAttribute="bottom" constant="5" id="D2q-eN-orV"/>
+                                <constraint firstItem="YSh-6i-SaO" firstAttribute="centerX" secondItem="6uN-uX-EhF" secondAttribute="centerX" id="DSS-ni-jbo"/>
                                 <constraint firstItem="uDv-LL-8rk" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="DWJ-Tg-WoR"/>
                                 <constraint firstItem="gSz-CK-oYV" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="IXG-Wk-QZs"/>
                                 <constraint firstItem="gSz-CK-oYV" firstAttribute="top" secondItem="uDv-LL-8rk" secondAttribute="bottom" constant="5" id="KkL-dY-zrJ"/>
+                                <constraint firstAttribute="bottom" secondItem="YSh-6i-SaO" secondAttribute="bottom" constant="-145" id="LKp-Bu-Xm9"/>
                                 <constraint firstItem="6uN-uX-EhF" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="Qgp-i4-isd"/>
+                                <constraint firstItem="YSh-6i-SaO" firstAttribute="top" secondItem="Ap9-Sf-38S" secondAttribute="bottom" constant="8" symbolic="YES" id="RRY-y0-fVz"/>
                                 <constraint firstAttribute="bottom" secondItem="Ap9-Sf-38S" secondAttribute="bottom" constant="25" id="SCL-B8-lnO"/>
                                 <constraint firstItem="klL-Bc-VOj" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="SKm-PY-IjO"/>
                                 <constraint firstAttribute="trailing" secondItem="Ap9-Sf-38S" secondAttribute="trailing" constant="25" id="Uah-Wc-Ig6"/>
                                 <constraint firstItem="uDv-LL-8rk" firstAttribute="top" secondItem="NDh-d4-Eja" secondAttribute="bottom" constant="5" id="Wzz-3P-I5P"/>
                                 <constraint firstItem="klL-Bc-VOj" firstAttribute="top" secondItem="Dyy-9y-Y8d" secondAttribute="bottom" constant="5" id="Xu0-an-4Rr"/>
+                                <constraint firstItem="YSh-6i-SaO" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" id="Z1S-oq-xlh"/>
                                 <constraint firstItem="Dyy-9y-Y8d" firstAttribute="top" secondItem="Ezh-xA-IC2" secondAttribute="top" constant="40" id="ca3-EB-asA"/>
                                 <constraint firstAttribute="trailing" secondItem="QQY-ks-CKS" secondAttribute="trailing" constant="26" id="eRd-Gi-SEA"/>
                                 <constraint firstAttribute="trailing" secondItem="NDh-d4-Eja" secondAttribute="trailing" constant="26" id="ha8-zv-BEg"/>
+                                <constraint firstAttribute="bottom" secondItem="YSh-6i-SaO" secondAttribute="bottom" id="hm0-c8-1uL"/>
                                 <constraint firstAttribute="trailing" secondItem="6uN-uX-EhF" secondAttribute="trailing" constant="26" id="jX0-Et-3wY"/>
                                 <constraint firstItem="Dyy-9y-Y8d" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="kKl-N5-rWB"/>
                                 <constraint firstAttribute="trailing" secondItem="Dyy-9y-Y8d" secondAttribute="trailing" constant="25" id="kPI-5u-egH"/>
@@ -485,6 +535,7 @@
                                 <constraint firstAttribute="trailing" secondItem="gSz-CK-oYV" secondAttribute="trailing" constant="26" id="pfQ-wM-kAz"/>
                                 <constraint firstItem="2AE-v2-0SJ" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="qSf-jD-9DF"/>
                                 <constraint firstAttribute="trailing" secondItem="klL-Bc-VOj" secondAttribute="trailing" constant="25" id="qwY-j0-ate"/>
+                                <constraint firstItem="YSh-6i-SaO" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" id="shp-4E-UhU"/>
                                 <constraint firstAttribute="trailing" secondItem="2AE-v2-0SJ" secondAttribute="trailing" constant="25" id="tHm-Ax-aRE"/>
                                 <constraint firstItem="QQY-ks-CKS" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="tRb-ec-enR"/>
                                 <constraint firstItem="Vyg-MH-0lq" firstAttribute="leading" secondItem="Ezh-xA-IC2" secondAttribute="leading" constant="25" id="vfw-9c-Wte"/>
@@ -493,8 +544,10 @@
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="4KW-4i-cFT"/>
                                     <exclude reference="xgN-ib-sKb"/>
+                                    <exclude reference="SCL-B8-lnO"/>
+                                    <exclude reference="DSS-ni-jbo"/>
+                                    <exclude reference="hm0-c8-1uL"/>
                                 </mask>
                             </variation>
                         </view>

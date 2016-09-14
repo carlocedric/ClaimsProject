@@ -24,7 +24,7 @@ class CustomUITextField: UITextField {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        //self.addShadow()
+        self.addShadow()
 
     }
 
@@ -32,6 +32,10 @@ class CustomUITextField: UITextField {
         self.layer.shadowColor = UIColor.blackColor().CGColor
         self.layer.shadowOpacity = 0.5
         self.layer.shadowRadius = 2
-        self.layer.shadowOffset = CGSizeMake(3.0, 3.0)
+        self.layer.shadowOffset = CGSizeMake(1.0, 1.0)
+        self.layer.masksToBounds = false
+    }
+    func showShadowColor(color:UIColor){
+        self.layer.shadowColor = color.CGColor
     }
 }

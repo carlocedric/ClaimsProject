@@ -21,6 +21,11 @@ class AddNewClaimVC: UIViewController {
     @IBOutlet weak var rateTextField: CustomUITextField!
     @IBOutlet weak var itemTextField: UITextView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var photosView:UIView!
+    @IBOutlet weak var photosViewBG:UIView!
+    @IBOutlet weak var mainView:UIView!
+
+    @IBOutlet weak var viewHeightConstraint: NSLayoutConstraint!
 
     private var datePickerView:UIDatePicker?
     private var toolbar:UIToolbar?
@@ -47,6 +52,49 @@ class AddNewClaimVC: UIViewController {
         createToolBar()
 
         self.addToolBar(itemTextField)
+        self.addShadowTextView(itemTextField)
+        //self.setupPhotosView()
+
+    }
+
+    private func test(){
+
+        var alpha = self.photosView.alpha
+
+
+        if alpha == 0.0 {
+            alpha = 1.0
+            UIView.animateWithDuration(0.5, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+
+                self.viewHeightConstraint.constant = 0
+
+                self.photosView.alpha = alpha
+                }, completion: nil)
+
+                var point = self.scrollView.contentOffset
+                point.y += self.photosView.frame.size.height
+                self.scrollView.setContentOffset(point, animated: true)
+        }
+        else{
+            alpha = 0.0
+            UIView.animateWithDuration(0.5, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+
+                self.viewHeightConstraint.constant = -145
+
+                self.photosView.alpha = alpha
+                }, completion: nil)
+        }
+//
+//        self.scrollView.translatesAutoresizingMaskIntoConstraints = false
+//        self.photosView.translatesAutoresizingMaskIntoConstraints = false
+//        self.mainView.translatesAutoresizingMaskIntoConstraints = false
+//
+//
+//        var verticalSpace = NSLayoutConstraint(item: self.mainView, attribute: .Bottom, relatedBy: .Equal, toItem: self.photosView, attribute: .Bottom, multiplier: 1, constant: 0)
+//
+//
+//        // activate the constraints
+//        NSLayoutConstraint.activateConstraints([verticalSpace])
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,6 +111,22 @@ class AddNewClaimVC: UIViewController {
     private func createNormalPicker() {
         normalPickerView = UIPickerView()
         normalPickerView!.delegate = self
+    }
+
+    private func setupPhotosView(){
+        var blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        var blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = photosViewBG.bounds
+        blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        photosViewBG.addSubview(blurEffectView)
+    }
+
+    private func addShadowTextView(textView:UITextView){
+        textView.layer.shadowColor = UIColor.blackColor().CGColor
+        textView.layer.shadowOpacity = 0.5
+        textView.layer.shadowRadius = 2
+        textView.layer.shadowOffset = CGSizeMake(1.0, 1.0)
+        textView.layer.masksToBounds = false
     }
 
     private func showDatePicker(textField:UITextField) {
@@ -115,7 +179,9 @@ class AddNewClaimVC: UIViewController {
     }
 
     @IBAction func submitClaim(){
-        EmailManager.sharedInstance.sendEmail(recipients: ["carlocedriclijauco@live.com"], subject: "this is a subject", messageBody: "body", inViewController: self)
+        //EmailManager.sharedInstance.sendEmail(recipients: ["carlocedriclijauco@live.com"], subject: "this is a subject", messageBody: "body", inViewController: self)
+
+        self.test()
     }
 }
 
@@ -153,9 +219,8 @@ extension AddNewClaimVC : UITextFieldDelegate{
     }
 
     func textFieldDidEndEditing(textField: UITextField) {
-        textField.resignFirstResponder()
+               textField.resignFirstResponder()
     }
-
 }
 
 extension AddNewClaimVC : UIPickerViewDelegate{
